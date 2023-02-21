@@ -1,9 +1,7 @@
-FROM tomcat
-USER root
-COPY  ProjectDockerImage.war /usr/local/tomcat/webapps/
+FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+ADD target/devOpsDemo-0.0.1-SNAPSHOT.jar app.jar
+
+ENTRYPOINT ["java","-jar","app.jar"]
+
 EXPOSE 8080
-CMD ["catalina.sh","run"]
-
-
-
-// CMD ["/opt/tomcat/bin/catalina.sh", "run"]
