@@ -1,5 +1,5 @@
 FROM tomcat
-USER jenkins
+USER root
 COPY  ProjectDockerImage.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 CMD ["catalina.sh","run"]
