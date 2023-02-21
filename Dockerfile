@@ -1,5 +1,5 @@
 FROM tomcat
-RUN apt-get update && apt-get -y upgrade
+// RUN apt-get update && apt-get -y upgrade
 
 // WORKDIR /usr/local/tomcat
 
