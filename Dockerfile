@@ -3,7 +3,7 @@ RUN apt-get update && apt-get -y upgrade
 
 WORKDIR /usr/local/tomcat
 
-COPY *.jar* /opt/tomcat/
+// COPY *.jar* /opt/tomcat/
 // COPY context.xml /usr/local/tomcat/webapps/manager/META-INF/context.xml
 
 EXPOSE 8080
